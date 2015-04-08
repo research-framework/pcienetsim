@@ -63,8 +63,10 @@ To support such scalable and configurable PCIe networks, PCIeNetSim has below ch
 <ul>
  <li> <h5> Separate PCIe Components </h5>
   <p> PCIe network consists of four major PCIe components: root complex (RC), switch (SW), endpoint (EP), and link.
-  RC generates PCIe packets at the host side, whereas EP processes the packets at the storage side. A set of SWs connects RCs and EPs 
-  while links are laid between any neighboring PCIe components.
+  RC generates PCIe packets at the host side, whereas EP processes the packets at the storage side. A set of SWs connects RCs and EPs, 
+  while links are laid between any neighboring PCIe components.  
+  PCIeNetsim enables users to construct any type of networks by separately modeling each PCIe component. 
+  The number of ports and the corresponding buffer size can be user-specified, which realizes a customized PCIe network to comply with the PCIe specification.
     
     
   </p>  
