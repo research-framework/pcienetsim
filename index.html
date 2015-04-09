@@ -82,8 +82,11 @@ To support such scalable and configurable PCIe networks, PCIeNetSim has below ch
   A switch can consist of a upward port (which attaches to RC) and multiple downward ports (which are connected to the corresponding EPs).
   Even though there is no specified limit in the number of downward ports or EPs, connecting unlimited number of EPs is not a recommended way
   due to the cost and performance issue. Instead, a layered SW tree can allow more and more EPs to dangle to its corresponding RC.
-  In the SW tree, an upper-layer SW's downward port faces to the upward port of the lower-layer SW.  
-  tree, layer, duplicate,</p>
+  In the SW tree, an upper-layer SW's downward port faces to the upward port of the lower-layer SW, which can increase the number of last-layer SWs' downward ports where
+  EPs can be connected. PCIeNetSim enables users configure their own SW tree depending on the need such as network size and the number of end devices.
+  Furthermore, RC (as described in the figure) can have multiple ports, which is used for an EP, a SW, or a SW tree. 
+  To simulate a system with large device (or EP) clusters, PCIeNetSim is designed to connect duplicate (indentically configured) SW trees to each RC's port.
+  </p>
  </li>  
 </ul>
 
