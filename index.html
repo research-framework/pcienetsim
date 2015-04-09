@@ -66,13 +66,17 @@ To support such scalable and configurable PCIe networks, PCIeNetSim has below ch
   RC generates PCIe packets at the host side, whereas EP processes the packets at the storage side. A set of SWs connects RCs and EPs, 
   while links are laid between any neighboring PCIe components.  
   PCIeNetsim enables users to construct any type of networks by separately modeling each PCIe component. 
-  The number of ports and the corresponding buffer size can be user-specified, which realizes a customized PCIe network to comply with the PCIe specification.
-    
-    
+  The number of ports and lanes can be user-specified, which realizes a customized PCIe network to comply with the PCIe specification.
   </p>  
  </li>  
- <li> <h5> Scalable Link Spec </h5> </li>
-  <p> Link, version, lane </p>
+ <li> <h5> Scalable Link Spec </h5> 
+  <p> Between any two PCIe components, there should be a PCIe link which data transfer capability is determined by the PCIe version, 
+  the number of lanes it employs. According to the specification, the data rate can scalably increase depending on the number of lanes the link
+  includes.
+    
+    
+  </p>
+ </li>
  <li> <h5> Configurable Switch Trees </h5> </li>
   <p> tree, layer, duplicate,</p>
   
