@@ -103,10 +103,48 @@ $ ./PNS --conf conf-file-name --trace trace-file-name
 </code>
  </li>
  <li> <h5> Configuration File </h5>
+<code>
+[System]
+numQueueEntry 10000
+numDevice 8
+numSwitchLayer 1
+numDigitDevice 3
+numPar 4
+numDigitPar 2
+sizePage 4
 
+[RootComplex]
+numDownPort 4
+numTotalLane 128
+
+[Link] 1
+numVer 2
+numLink 4
+numLane 32
+
+[Switch] 1
+numSwitch 4
+numPort 3
+numTotalLane 96
+sizePortBuffer 16777216
+timeSwitching 50
+
+[Link] 2
+numVer 2
+numLink 8
+numLane 32
+
+[EndPoint]
+numEndPoint 8
+numPort 1
+numLane 1
+sizePortBuffer 4194304
+</code>
  </li>
  <li> <h5> Trace File </h5>
-
+<code>
+req-type  block-address  req-size
+</code>
  </li>
   <li> <h5> Simulation Result </h5>
 
