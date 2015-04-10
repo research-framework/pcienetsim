@@ -139,7 +139,9 @@ sizePortBuffer 4194304
  </li>
  <li> <h5> Trace File </h5>
  <p> The format of the trace file comprises of three attributes: request type, request address, and request size. An example of
- <"req-type"  "block-address"  "req-size"> tuples is shown below. </p>
+ <"req-type"  "block-address"  "req-size"> tuples is shown below. In the current version, "req-type" has to be specified as "Read" or "Write".
+ Also, "block-address" stands for the logical block address, whereas "req-size" is specified using a unit of sector.   
+ </p>
 <pre><code>Read 7014960 8
 Write 1887931904 128
 ...
