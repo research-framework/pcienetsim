@@ -108,8 +108,9 @@ $ ./PNS --conf conf-file-name --trace trace-file-name
 Each component further consists of <"attribute", "value"> pairs. An example shown below starts with the overall system configuration (named [System])
 and PCIe components ([RootComplex], [Link], [Switch], and [EndPoint]) follow. For instance, the system configuration requires to specify the number of command queue
 entries (numQueueEntry), the number of devices be connected (numDevice), the number of SW layers depending on the network size (numSwitchLayer), and so on.
-The designated network tree consists of a RC and four SWs (each connected to the four ports of the RC). Each SW has two downward ports of which is connected to an EP.
-By placing a link between any component, the PCIe tree network bridges between the RC and the eight devices.    
+On the other hand, the designated network tree consists of a RC and four SWs (each connected to the four ports of the RC). Each SW has two downward ports of which is connected to an EP.
+By placing a link between any component, the PCIe tree network bridges between the RC and the eight devices. To realize the tree network, each attribute of each component 
+is specified as shown in below.
 </p>
 <pre><code>[System] 
 numQueueEntry 10000
