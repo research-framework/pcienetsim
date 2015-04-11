@@ -106,7 +106,7 @@ $ ./PNS --conf conf-file-name --trace trace-file-name
  <li> <h5> Configuration File </h5>
 <p> The configuration file defines a user-customized network. The format of the configuration file includes each PCIe components.
 Each component further consists of <"attribute", "value"> pairs. An example shown below starts with the overall system configuration (named [System])
-and PCIe components consisting of a tree follow. For instance, the system configuration requires to specify the number of command queue
+and PCIe components ([RootComplex], [Link], [Switch], and [EndPoint]) consisting of a tree follow. For instance, the system configuration requires to specify the number of command queue
 entries (numQueueEntry), the number of devices be connected (numDevice), the number of SW layers depending on the network size (numSwitchLayer), and so on.
 </p>
 <pre><code>[System] 
